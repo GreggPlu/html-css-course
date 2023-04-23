@@ -5,6 +5,13 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -63,3 +70,44 @@ li {
 .related-list {
   list-style: none;
 }
+.main-header {
+  background-color: #f7f7f7;
+}
+.title-header {
+  background-color: #d9ff0025;
+}
+.page-article {
+  background-color: #00ffff25;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+body {
+  /* background-color: #0000ff; */
+}
+
+/* Misconception: this won't work */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* LVHA means always write in this order link, visited, hover, and active */
