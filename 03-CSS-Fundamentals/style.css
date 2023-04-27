@@ -27,6 +27,7 @@ body {
 
 nav {
   font-size: 18px;
+  text-align: center;
 }
 
 article {
@@ -127,7 +128,7 @@ li:last-child {
 }
 
 .page-article {
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
 }
 aside {
   background-color: #f7f7f7;
@@ -186,6 +187,29 @@ button {
   left: 0; */
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  border: solid;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* LVHA means always write in this order link, visited, hover, and active */
